@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Kids Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="question">What's the color of the sky?</div>
+        <div class="options">
+            <button onclick="checkAnswer(0)">Red</button>
+            <button onclick="checkAnswer(1)">Blue</button>
+            <button onclick="checkAnswer(2)">Green</button>
+            <button onclick="checkAnswer(3)">Yellow</button>
+        </div>
+        <div class="feedback"></div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <button class="next" onclick="nextQuestion()">Next</button>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
